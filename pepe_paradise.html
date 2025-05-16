@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepe Paradise - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; padding: 0; overflow-x: hidden; background: black; color: white; }
+    #tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+    canvas#stars, canvas#shooting-star {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: -2;
+    }
+    @keyframes glowText {
+      0% { text-shadow: 0 0 0px #84cc16; }
+      50% { text-shadow: 0 0 12px #84cc16, 0 0 24px #facc15; }
+      100% { text-shadow: 0 0 0px #84cc16; }
+    }
+    .animate-glow {
+      animation: glowText 1.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+<header class="fixed top-0 w-full bg-black bg-opacity-70 z-50 shadow-md">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center gap-2">
+      <a href="#home" class="flex items-center gap-2">
+        <!-- Logo Placeholder -->
+        <div class="w-10 h-10 rounded-full bg-green-500"></div>
+        <span class="text-2xl font-bold text-green-400">Pepe Paradise</span>
+      </a>
+    </div>
+    <div class="hidden md:flex items-center gap-4">
+      <ul class="flex gap-4 text-yellow-300">
+        <li><a href="#why" class="hover:text-yellow-400">Why $PDISE</a></li>
+        <li><a href="#nfts" class="hover:text-yellow-400">NFTs</a></li>
+        <li><a href="#tokenomics" class="hover:text-yellow-400">Tokenomics</a></li>
+        <li><a href="#roadmap" class="hover:text-yellow-400">Roadmap</a></li>
+        <li><a href="#community" class="hover:text-yellow-400">Community</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="relative h-screen w-full overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="w-full h-full bg-green-800 opacity-30"></div>
+  </div>
+  <div class="relative z-10 flex flex-col justify-center items-center text-center h-full px-6">
+    <h1 class="text-5xl md:text-7xl font-bold text-green-400 mb-6 drop-shadow-xl">
+      Welcome to Pepe Paradise
+    </h1>
+    <p class="text-xl md:text-2xl text-yellow-200 mb-4 drop-shadow-lg">
+      A meme utopia powered by $PDISE
+    </p>
+    <p class="mt-4 text-lg md:text-xl font-semibold text-yellow-300 animate-glow">
+      Escape the ordinary. Embrace the meme revolution.
+    </p>
+  </div>
+</section>
+
+<section id="why" class="py-20 px-6 max-w-6xl mx-auto">
+  <h2 class="text-4xl font-bold mb-12 text-center text-green-400">Why Choose Pepe Paradise?</h2>
+  <div class="grid md:grid-cols-4 gap-8 text-center">
+    <div class="p-6 bg-black rounded-xl border border-green-500 hover:scale-105 transition-transform">
+      <h3 class="text-2xl mb-4 text-yellow-400">Decentralized Fun</h3>
+      <p class="text-gray-400">Community-powered, chaos-fueled — driven by the love of memes.</p>
+    </div>
+    <div class="p-6 bg-black rounded-xl border border-green-500 hover:scale-105 transition-transform">
+      <h3 class="text-2xl mb-4 text-yellow-400">Secure Launch</h3>
+      <p class="text-gray-400">Liquidity locked. Ownership renounced. You’re in control.</p>
+    </div>
+    <div class="p-6 bg-black rounded-xl border border-green-500 hover:scale-105 transition-transform">
+      <h3 class="text-2xl mb-4 text-yellow-400">Meme Utility</h3>
+      <p class="text-gray-400">Not just a meme — real-world integrations and use cases coming soon.</p>
+    </div>
+    <div class="p-6 bg-black rounded-xl border border-green-500 hover:scale-105 transition-transform">
+      <h3 class="text-2xl mb-4 text-yellow-400">Global Appeal</h3>
+      <p class="text-gray-400">Pepe speaks every language. So does $PDISE.</p>
+    </div>
+  </div>
+</section>
+<!-- NFTs Section -->
+<section id="nfts" class="py-24 px-6 bg-gradient-to-b from-black via-green-900 to-black text-center">
+  <h2 class="text-4xl font-bold text-green-400 mb-12">Pepe Paradise NFTs</h2>
+  <p class="text-yellow-300 mb-10 max-w-2xl mx-auto">
+    Discover the official NFT collection of Pepe Paradise. Each one is a rare digital artifact of meme culture.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+    <!-- NFT 1 -->
+    <div class="bg-black rounded-xl border-2 border-green-500 p-4 shadow-lg hover:scale-105 transition-transform">
+      <div class="w-full h-40 bg-green-800 rounded-lg mb-4 flex items-center justify-center text-yellow-300">NFT #001</div>
+      <h3 class="text-lg font-bold text-green-400">Pepe Shaman</h3>
+    </div>
+    <!-- NFT 2 -->
+    <div class="bg-black rounded-xl border-2 border-green-500 p-4 shadow-lg hover:scale-105 transition-transform">
+      <div class="w-full h-40 bg-green-800 rounded-lg mb-4 flex items-center justify-center text-yellow-300">NFT #002</div>
+      <h3 class="text-lg font-bold text-green-400">Pepe Samurai</h3>
+    </div>
+    <!-- NFT 3 -->
+    <div class="bg-black rounded-xl border-2 border-green-500 p-4 shadow-lg hover:scale-105 transition-transform">
+      <div class="w-full h-40 bg-green-800 rounded-lg mb-4 flex items-center justify-center text-yellow-300">NFT #003</div>
+      <h3 class="text-lg font-bold text-green-400">Pepe Astronaut</h3>
+    </div>
+    <!-- NFT 4 -->
+    <div class="bg-black rounded-xl border-2 border-green-500 p-4 shadow-lg hover:scale-105 transition-transform">
+      <div class="w-full h-40 bg-green-800 rounded-lg mb-4 flex items-center justify-center text-yellow-300">NFT #004</div>
+      <h3 class="text-lg font-bold text-green-400">Pepe Pharaoh</h3>
+    </div>
+    <!-- NFT 5 -->
+    <div class="bg-black rounded-xl border-2 border-green-500 p-4 shadow-lg hover:scale-105 transition-transform">
+      <div class="w-full h-40 bg-green-800 rounded-lg mb-4 flex items-center justify-center text-yellow-300">NFT #005</div>
+      <h3 class="text-lg font-bold text-green-400">Pepe Cyborg</h3>
+    </div>
+  </div>
+</section>
+
+
+<section id="tokenomics" class="py-20 px-6 max-w-6xl mx-auto">
+  <h2 class="text-4xl font-bold mb-12 text-center text-green-400">Tokenomics</h2>
+  <div class="grid md:grid-cols-2 gap-12 items-stretch">
+    <div class="flex items-center justify-center p-8 bg-black rounded-2xl border-2 border-green-500 hover:scale-105 transition-transform">
+      <div class="text-center">
+        <h3 class="text-3xl text-yellow-400 mb-4">Total Supply</h3>
+        <p class="text-2xl text-gray-300">
+          1,000,000,000 <span class="text-yellow-400 font-extrabold tracking-wide animate-pulse">PDISE</span>
+        </p>
+        <p class="text-gray-400 mt-4">
+          A fair launch for meme believers around the world.
+        </p>
+      </div>
+    </div>
+    <div class="p-8 bg-black rounded-2xl border-2 border-yellow-400 hover:scale-105 transition-transform">
+      <h3 class="text-3xl text-yellow-400 mb-4">Distribution</h3>
+      <div class="space-y-4 text-gray-300 text-left">
+        <p><span class="text-green-400 font-bold">30%</span> — Public Sale</p>
+        <p><span class="text-green-400 font-bold">25%</span> — Liquidity Pool</p>
+        <p><span class="text-green-400 font-bold">15%</span> — Marketing & Airdrops</p>
+        <p><span class="text-green-400 font-bold">10%</span> — Meme Development</p>
+        <p><span class="text-green-400 font-bold">20%</span> — Burn to boost scarcity</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="py-20 px-6 bg-black">
+  <h2 class="text-4xl font-bold mb-16 text-center text-green-400">Roadmap</h2>
+
+  <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-20">
+
+    <!-- Phase 1 -->
+    <div>
+      <h3 class="text-3xl font-bold text-yellow-400 mb-6">Phase 1: Meme Awakening</h3>
+      <ul class="text-lg text-gray-300 space-y-4 text-center">
+        <li><span class="checkmark-animate text-green-400 font-semibold">✅ Website Launch & Meme Branding</span></li>
+        <li><span class="checkmark-animate text-green-400 font-semibold">✅ Community Building (Telegram, Twitter)</span></li>
+        <li>🧠 Smart Contract Development & Deployment</li>
+        <li>🔓 Ownership Renounced — Fully Community-Controlled</li>
+        <li>💧 Initial Liquidity Pool Added on DEX</li>
+        <li>🔥 LP Tokens Burned — Liquidity Locked Forever</li>
+      </ul>
+    </div>
+
+    <!-- Phase 2 -->
+    <div>
+      <h3 class="text-3xl font-bold text-yellow-400 mb-6">Phase 2: Expansion</h3>
+      <ul class="text-lg text-gray-300 space-y-4 text-center">
+        <li>📈 Listing on <span class="font-semibold text-white">CoinMarketCap</span></li>
+        <li>📊 Listing on <span class="font-semibold text-white">CoinGecko</span></li>
+        <li>🌐 Partnerships with <span class="font-semibold text-white">Top Meme Influencers</span></li>
+        <li><span class="checkmark-animate text-green-400 font-semibold">✅ Viral Marketing Campaigns</span></li>
+        <li>💎 Tier-1 CEX Listing Applications</li>
+        <li>🛡️ Smart Contract Audit and Security Enhancements</li>
+      </ul>
+    </div>
+
+    <!-- Phase 3 -->
+    <div>
+      <h3 class="text-3xl font-bold text-yellow-400 mb-6">Phase 3: Memevolution</h3>
+      <ul class="text-lg text-gray-300 space-y-4 text-center">
+        <li>📱 Launch of <span class="font-semibold text-white">Pepe Wallet</span> — Secure & Fun</li>
+        <li>🤝 Expanding <span class="font-semibold text-white">Global Meme Alliances</span></li>
+        <li>🌍 Integrating Real-World Meme Payments</li>
+        <li>🏆 Goal: <span class="font-semibold text-green-400">100,000+ Meme Holders</span> Worldwide</li>
+      </ul>
+    </div>
+
+    <!-- Phase Divider Dots -->
+    <div class="flex justify-center items-center mt-20 mb-8 space-x-2 animate-pulse">
+      <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+      <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+      <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+      <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+      <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+    </div>
+
+    <!-- Phase N: Moonshot -->
+    <div class="text-center max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold text-green-400 mb-4 tracking-widest uppercase">Phase N: Moonshot 🚀</h3>
+      <p class="text-gray-400 text-lg mb-6 max-w-2xl mx-auto">
+        Where memes meet magic. The Moonshot is the unpredictable power of community-driven innovation.
+      </p>
+      <ul class="text-lg text-gray-300 space-y-4">
+        <li>🎁 Rewarding Early Memers — For Being First</li>
+        <li>🌌 Cross-Chain Support (BSC, ETH, SOL)</li>
+        <li>🧠 AI-Powered Meme Tracker</li>
+        <li>🎮 PepeVerse: The Meme Metaverse</li>
+        <li>🚀 Launchpad for Meme Tokens</li>
+        <li>🌐 DAO Governance & Treasury</li>
+      </ul>
+<!--      <a href="Whitepaper.pdf"-->
+<!--         download-->
+<!--         class="inline-block bg-gradient-to-r from-green-500 via-yellow-500 to-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-green-500/50 transition duration-300">-->
+<!--        📄 Download Whitepaper-->
+<!--      </a>-->
+<!--      <div class="flex flex-col items-center">-->
+<!--        <p class="text-xs text-yellow-300 mb-1">Light version for casual readers</p>-->
+<!--        <a href="Lightpaper.pdf"-->
+<!--           download-->
+<!--           class="border-2 border-yellow-400 text-yellow-300 hover:bg-yellow-600 hover:text-white font-bold px-5 py-2.5 rounded-full transition duration-300 flex items-center gap-2 whitespace-nowrap">-->
+<!--          <span>📝</span>-->
+<!--          <span>Lightpaper</span>-->
+<!--        </a>-->
+<!--      </div>-->
+    </div>
+
+  </div>
+
+  <!-- Final Note -->
+  <div class="text-center mt-20">
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+      Pepe Paradise is a movement — and every milestone is a meme in the making.
+    </p>
+  </div>
+</section>
+
+<section id="community" class="py-20 px-6 text-center">
+  <h2 class="text-4xl font-bold text-green-400 mb-6">Pepe Community</h2>
+  <p class="text-yellow-300 mb-10">Join the strongest meme force online.</p>
+  <div class="flex flex-wrap justify-center gap-6">
+    <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full">Telegram</a>
+    <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full">Twitter</a>
+  </div>
+</section>
+<section id="about" class="py-20 px-6 bg-gradient-to-b from-black via-green-900 to-black">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Side Text -->
+    <div>
+      <h3 class="text-yellow-400 text-xl font-bold mb-4">ABOUT PDISE</h3>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        POWERING THE MEME MOVEMENT
+      </h2>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Pepe Paradise ($PDISE) isn’t just another token—it’s a cultural wave. With a vibrant community, secure launch, and real-world integrations on the horizon, PDISE is building the ultimate meme-powered economy.
+      </p>
+    </div>
+
+    <!-- Pepe Pillars Section (Right Side) -->
+    <div class="grid grid-cols-2 gap-6 animate-fade-up" style="animation-delay: 0.2s;">
+      <div class="bg-black/40 border border-green-400/40 p-6 rounded-xl text-center shadow-md hover:shadow-green-500/10 transition duration-300">
+        <h4 class="text-xl text-green-400 font-semibold mb-2">Decentralized Vibes</h4>
+        <p class="text-gray-400 text-sm">Led by memes, guided by the crowd.</p>
+      </div>
+      <div class="bg-black/40 border border-green-400/40 p-6 rounded-xl text-center shadow-md hover:shadow-green-500/10 transition duration-300 delay-100">
+        <h4 class="text-xl text-green-400 font-semibold mb-2">Transparent Fun</h4>
+        <p class="text-gray-400 text-sm">No hidden fees, no rug pulls—just memes and math.</p>
+      </div>
+      <div class="bg-black/40 border border-green-400/40 p-6 rounded-xl text-center shadow-md hover:shadow-green-500/10 transition duration-300 delay-200">
+        <h4 class="text-xl text-green-400 font-semibold mb-2">Universal Appeal</h4>
+        <p class="text-gray-400 text-sm">From the internet to the moon—PDISE belongs to everyone.</p>
+      </div>
+      <div class="bg-black/40 border border-green-400/40 p-6 rounded-xl text-center shadow-md hover:shadow-green-500/10 transition duration-300 delay-300">
+        <h4 class="text-xl text-green-400 font-semibold mb-2">Sustainable Hype</h4>
+        <p class="text-gray-400 text-sm">Built to last longer than a meme cycle.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="py-10 px-6 text-center bg-black border-t border-green-800 mt-20">
+  <p class="text-gray-500">
+    Follow us:
+    <a href="https://t.me/pepeparadise" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline mx-1">Telegram</a> |
+    <a href="https://x.com/PepeParadiseToken" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline mx-1">Twitter</a> |
+    <a href="https://t.me/pepeparadisegroup" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:underline mx-1">Telegram Group</a>
+  </p>
+  <p class="text-yellow-500 mt-4">© 2025 Pepe Paradise. All rights reserved.</p>
+</footer>
+
+
+<a href="#home" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg animate-bounce">
+  ↑
+</a>
+
+<script>
+  tsParticles.load("tsparticles", {
+    particles: {
+      number: { value: 80 },
+      size: { value: 2 },
+      move: { enable: true, speed: 0.5 },
+      color: { value: ["#84cc16", "#facc15"] },
+      links: { enable: true, color: "#ffffff" }
+    }
+  });
+</script>
+</body>
+</html>
